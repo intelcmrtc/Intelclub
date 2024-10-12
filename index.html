@@ -3,50 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IntelClub - Site Under Construction</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IntelClub</title>
     <style>
+        /* Global Styling */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f0f; /* Dark background */
+            color: #e0e0e0; /* Light text */
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            margin: 0;
         }
+
         .container {
             text-align: center;
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent black */
+            border-radius: 20px;
+            padding: 50px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
+
         h1 {
-            color: #333;
-            margin-bottom: 1rem;
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff5e57; /* Neon reddish color */
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
+
         p {
-            color: #666;
-            margin-bottom: 1.5rem;
+            font-size: 18px;
+            margin: 20px 0;
+            color: #cfcfcf; /* Slightly lighter text for better contrast */
         }
-        .contact {
-            color: #007BFF;
+
+        .construction-icon {
+            font-size: 150px;
+            color: #ff5e57; /* Matching the heading color */
+            margin-bottom: 30px;
+            animation: glow 2s infinite ease-in-out;
+        }
+
+        a {
             text-decoration: none;
-            font-weight: bold;
+            font-size: 18px;
+            padding: 12px 24px;
+            background-color: #ff5e57;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        .contact:hover {
-            text-decoration: underline;
+
+        a:hover {
+            background-color: #e04942; /* Darker hover effect */
+            transform: scale(1.05);
+        }
+
+        /* Animation for the icon */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 94, 87, 0.7);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 94, 87, 1);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 94, 87, 0.7);
+            }
         }
     </style>
 </head>
 <body>
-    <h1>This is test page</h1>
     <div class="container">
+        <div class="construction-icon">🚧</div>
         <h1>Site Under Construction</h1>
         <p>We’re currently building something exciting for IntelClub members! Stay tuned for a brand-new experience.</p>
         <p>Our website will soon provide you with all the latest updates on events, resources, and exclusive content for IntelClub members. Join us in shaping the future of tech and innovation!</p>
-        <p>Any queries? <a class="contact" href="mailto:intelclub@cmrtc.ac.in">Contact Us!</a></p>
+        <a href="mailto:intelcmrtc@cmrtc.ac.in">Any queries? Contact Us!</a>
     </div>
 </body>
 </html>
